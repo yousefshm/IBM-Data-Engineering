@@ -1,4 +1,3 @@
-```markdown
 # ETL Data Processing Pipeline
 
 A lightweight ETL pipeline that processes person data from multiple file formats, converts measurements to metric units, and consolidates the results.
@@ -10,12 +9,12 @@ Input (example formats):
 - XML: `<person><name>alex</name><height>66</height><weight>113</weight></person>`
 
 Output (transformed_data.csv):
-```
+
 name,height,weight
 alex,1.67,51.25
 ajay,1.82,61.91
 ...
-```
+
 
 ## Features
 
@@ -28,7 +27,6 @@ ajay,1.82,61.91
 
 ## File Structure
 
-```
 project/
 ├── etl_code.py            # Main ETL script
 ├── extracted_folder/      # Input directory (add your files here)
@@ -37,7 +35,6 @@ project/
 │   └── *.xml
 ├── transformed_data.csv   # Output file (generated)
 └── log_file.txt          # Operation log (generated)
-```
 
 ## Usage
 
