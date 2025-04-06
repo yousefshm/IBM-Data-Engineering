@@ -27,6 +27,7 @@ ajay,1.82,61.91
 
 ## File Structure
 
+```
 project/
 ├── etl_code.py            # Main ETL script
 ├── extracted_folder/      # Input directory (add your files here)
@@ -35,6 +36,7 @@ project/
 │   └── *.xml
 ├── transformed_data.csv   # Output file (generated)
 └── log_file.txt          # Operation log (generated)
+```
 
 ## Usage
 
