@@ -98,5 +98,3 @@ This version:
 4. Uses clean section headers
 5. Includes your actual data samples
 6. Is ready for immediate use on GitHub
-
-Just copy and paste this entire content into your README.md file.
