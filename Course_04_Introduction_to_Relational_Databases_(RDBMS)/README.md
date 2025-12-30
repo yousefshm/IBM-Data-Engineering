@@ -93,4 +93,4 @@ A solid understanding of RDBMS concepts is essential before moving to:
   - Data warehousing
 - A detailed summary is provided in the accompanying PDF.
 
-📄 **Related File:** `Course-Summary.pdf`
+📄 **Related File:** `4- Introduction to Relational Databases (RDBMS).pdf`
