@@ -67,6 +67,8 @@ Rather than focusing on theory alone, the emphasis here is on
 The final **IBM Data Engineering Professional Certificate**  
 has been successfully earned upon completing all program requirements.
 
+📄 **Related File:** `Yousef_Almotawea_IBM_Data_Engineering.pdf`
+
 🔗 **Credential URL:**  
 https://www.coursera.org/account/accomplishments/professional-cert/WOKRMJFSEACY
 
