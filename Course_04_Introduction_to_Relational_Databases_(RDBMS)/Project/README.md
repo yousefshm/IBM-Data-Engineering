@@ -35,7 +35,7 @@ As a data engineer, the task is to design a **central relational database** that
 ### 🔹 Task 1: Identify Entities
 Reviewed sample data from multiple sources and identified key entities required for the centralized database.
 
-📸 *Screenshot:* `Task1.png` (Task1.png)
+📸 *Screenshot:* `Task1.png`
 
 ---
 
