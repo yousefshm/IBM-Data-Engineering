@@ -110,11 +110,11 @@ Defined:
 📸 *Screenshots:*  
 - `Task6A.png`
 
-![Task5B](Task5B.png)
+![Task6A](Task6A.png)
 
 - `Task6B.png`
 
-![Task5B](Task5B.png)
+![Task6B](Task6B.png)
 
 ---
 
@@ -123,12 +123,16 @@ Created a PostgreSQL **view** to extract staff and location data (excluding exec
 
 📸 *Screenshot:* `Task7.png`
 
+![Task7](Task7.png)
+
 ---
 
 ### 🔹 Task 8: Create a Materialized View
 Created a **materialized view** combining product and product category data, then exported it to CSV for downstream use.
 
 📸 *Screenshot:* `Task8.png`
+
+![Task8](Task8.png)
 
 ---
 
@@ -137,12 +141,16 @@ Imported staff location data into a MySQL database using phpMyAdmin and validate
 
 📸 *Screenshot:* `Task9.png`
 
+![Task9](Task9.png)
+
 ---
 
 ### 🔹 Task 10: Import Product Data into MySQL
 Imported product data from the materialized view into a MySQL database for marketing analytics.
 
 📸 *Screenshot:* `Task10.png`
+
+![Task10](Task10.png)
 
 ---
 
