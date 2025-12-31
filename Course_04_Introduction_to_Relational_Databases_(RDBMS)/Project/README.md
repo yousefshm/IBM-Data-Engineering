@@ -37,12 +37,16 @@ Reviewed sample data from multiple sources and identified key entities required 
 
 📸 *Screenshot:* `Task1.png`
 
+![Task 1: Identify Entities](Task1.png)
+
 ---
 
 ### 🔹 Task 2: Identify Attributes
 Defined attributes for the **sales transaction** entity based on POS system data.
 
 📸 *Screenshot:* `Task2.png`
+
+![Task 2: Identify Attributes](Task2.png)
 
 ---
 
@@ -52,8 +56,13 @@ Designed an initial ERD in pgAdmin, defining tables and data types for:
 - Products
 
 📸 *Screenshots:*  
-- `Task3A.png`  
+- `Task3A.png`
+
+![Sales transactions](Task3A.png)
+
 - `Task3B.png`
+
+![Products](Task3B.png)
 
 ---
 
@@ -63,8 +72,13 @@ Normalized the database design to **Second Normal Form (2NF)** by:
 - Separating product type information to reduce redundancy
 
 📸 *Screenshots:*  
-- `Task4A.png`  
+- `Task4A.png`
+
+![Task4A](Task4A.png)
+
 - `Task4B.png`
+
+![Task4B](Task4B.png)
 
 ---
 
@@ -77,8 +91,13 @@ Defined:
   - Products ↔ product types
 
 📸 *Screenshots:*  
-- `Task5A.png`  
+- `Task5A.png`
+
+![Task5A](Task5A.png)
+
 - `Task5B.png`
+
+![Task5B](Task5B.png)
 
 ---
 
@@ -89,8 +108,13 @@ Defined:
 - Verified table creation and data insertion
 
 📸 *Screenshots:*  
-- `Task6A.png`  
+- `Task6A.png`
+
+![Task5B](Task5B.png)
+
 - `Task6B.png`
+
+![Task5B](Task5B.png)
 
 ---
 
