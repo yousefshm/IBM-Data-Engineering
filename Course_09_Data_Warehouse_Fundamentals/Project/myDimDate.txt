@@ -1,0 +1,58 @@
+CREATE TABLE MYDIMDATE (
+	DATEID INTEGER NOT NULL PRIMARY KEY,
+	DATE DATE,
+	YEAR SMALLINT,
+	QUARTER SMALLINT,
+	QUARTERNAME VARCHAR(30),
+	MONTH SMALLINT,
+	MONTHNAME VARCHAR(30),
+	DAY SMALLINT,
+	WEEKDAY SMALLINT,
+	WEEKDAYNAME VARCHAR(30)
+)
+
+==============================================
+
+CREATE TABLE MYDIMWASTE (
+	WASTEID INTEGER NOT NULL PRIMARY KEY,
+	WASTETYPE VARCHAR(30)
+)
+
+==============================================
+
+CREATE TABLE MYDIMZONE (
+	ZONEID INTEGER NOT NULL PRIMARY KEY,
+	COLLECTIONZONE VARCHAR(30),
+	CITY VARCHAR(30)
+)
+
+==============================================
+
+CREATE TABLE MYFACTTRIPS(
+	TRIPID INTEGER NOT NULL PRIMARY KEY,
+	WASTEID INTEGER,
+	ZONEID INTEGER,
+	DATEID INTEGER,
+	WASTECOLLECTEDINTONS NUMERIC(9,2),
+	FOREIGN KEY (DATEID) REFERENCES MYDIMDATE(DATEID),
+	FOREIGN KEY (WASTEID) REFERENCES MYDIMWASTE(WASTEID),
+	FOREIGN KEY (ZONEID) REFERENCES MYDIMZONE(ZONEID)
+)
+
+==============================================
+
+create the table: DimDate, with columns: dateid,date,Year,Quarter,QuarterName,Month,Monthname,Day,Weekday,WeekdayName
+
+==============================================
+
+create the table: DimTruck, with columns: Truckid,TruckType
+
+==============================================
+
+create the table: DimStation, with columns: Stationid,City
+
+==============================================
+
+create the table: FactTrips, with columns: Tripid,Dateid,Stationid,Truckid,Wastecollected
+
+==============================================
