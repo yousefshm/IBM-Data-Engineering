@@ -24,21 +24,29 @@ The primary focus of this module was user management and disaster recovery confi
 
 **1. Configuration Analysis**
 Analyzed the server configuration to determine connection limits, ensuring the environment is scaled correctly for expected traffic.
+
 ![Max Connections Configuration](max-connections.png)
+
 
 **2. User Management (RBAC)**
 Created a dedicated user `backup_operator` to segregate duties. Instead of assigning direct permissions, a specific role named `backup` was created to adhere to the principle of least privilege.
+
 ![Create User](create-user.png)
 ![Create Role](create-role.png)
 
+
 **3. Granting Privileges**
 Configured access controls by granting the `backup` role connection rights to the `tolldata` database and `SELECT` permissions on relevant schema tables. This role was then assigned to the `backup_operator`.
+
 ![Grant Privileges to Role](grant-privs-to-role.png)
 ![Grant Role to User](grant-role.png)
 
+
 **4. Disaster Recovery (Backup)**
 Performed a logical backup of the `tolldata` database using pgAdmin, exporting the schema and data into a TAR archive format to ensure data portability and recovery capability.
+
 ![Database Backup](backup-database.png)
+
 
 ---
 
@@ -48,29 +56,41 @@ This module focused on restoring data integrity, optimizing query performance, a
 
 **1. Data Recovery**
 Restored the `billingdata` database from a SQL dump file to simulate recovery from a critical failure or migration event. Verified the integrity of the restored tables.
+
 ![Database Restore](database-restore.png)
+
 
 **2. Storage Analysis**
 Analyzed table metadata to determine disk usage and data size, a critical step for capacity planning.
+
 ![Table Data Size](table-data-size.png)
+
 
 **3. Performance Tuning (Indexing)**
 Executed a baseline analysis of a high-latency query on the `billdata` table. Identified performance bottlenecks and implemented a B-Tree index on the filtered column (`billedamount`).
+
 ![Baseline Query Performance](query-base-line.png)
 ![Index Creation](index-creation.png)
 
+
 **4. Performance Validation**
 Re-executed the query post-indexing to quantify performance gains. Documented the reduction in execution time resulting from the optimization.
+
 ![Indexed Query Performance](query-indexed.png)
+
 
 **5. Architecture Analysis**
 Audited the database storage engines to confirm support for specific engines (e.g., MyISAM) and verified the active engine for production tables.
+
 ![Supported Storage Engines](storage-engines.png)
 ![Table Storage Engine](storage-engine-type.png)
 
+
 **6. Automation (Bash Scripting)**
 Developed a shell script (`mybackup.sh`) to automate the backup of all databases. The script integrates `mysqldump`, dynamic timestamp generation, and directory management to create organized, daily backups without manual intervention.
+
 ![Backup Automation Script](bash-script.png)
+
 
 ---
 
@@ -80,16 +100,22 @@ The final module utilized Datasette for lightweight data exploration and view ab
 
 **1. Data Ingestion**
 Imported raw billing data from CSV format into the database system, ensuring correct schema mapping.
+
 ![Restore Table](restore-table.png)
+
 
 **2. View Creation**
 Designed a database view (`basicbilldetails`) to abstract complex underlying table structures and provide a simplified interface for reporting users.
+
 ![Create View](create-view.png)
+
 
 **3. Indexing in Datasette**
 Applied indexing strategies within the Datasette environment to optimize filter queries on billing amounts, mirroring the optimization techniques used in MySQL.
+
 ![Datasette Index Creation](index-creation.png)
 ![Query Performance After Index](query-after-index.png)
+
 
 ## Key Learning Outcomes
 
