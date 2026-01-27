@@ -35,7 +35,7 @@ The company requires a script that:
 ### 🔹 Task 1: Set Script Arguments
 Defined variables to store the target directory and destination directory passed as command-line arguments.
 
-📸 *Screenshot:* `01-Set_Variables.png`
+![Setting script variables](01-Set_Variables.png)
 
 ---
 
