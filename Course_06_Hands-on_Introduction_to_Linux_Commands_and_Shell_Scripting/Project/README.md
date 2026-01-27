@@ -42,7 +42,7 @@ Defined variables to store the target directory and destination directory passed
 ### 🔹 Task 2: Display Argument Values
 Printed the values of the input directories to validate user input.
 
-📸 *Screenshot:* `02-Display_Values.png`
+!(02-Display_Values.png)
 
 ---
 
