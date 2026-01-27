@@ -42,112 +42,112 @@ Defined variables to store the target directory and destination directory passed
 ### 🔹 Task 2: Display Argument Values
 Printed the values of the input directories to validate user input.
 
-!(02-Display_Values.png)
+![Display Argument Values](02-Display_Values.png)
 
 ---
 
 ### 🔹 Task 3: Capture Current Timestamp
 Created a variable to store the current timestamp in seconds for time-based comparisons.
 
-📸 *Screenshot:* `03-CurrentTS.png`
+![Capture Current Timestamp](03-CurrentTS.png)
 
 ---
 
 ### 🔹 Task 4: Define Backup File Name
 Constructed a dynamic backup filename using the current timestamp.
 
-📸 *Screenshot:* `04-Set_Value.png`
+![Define Backup File Name](04-Set_Value.png)
 
 ---
 
 ### 🔹 Task 5: Determine Original Absolute Path
 Stored the absolute path of the current working directory.
 
-📸 *Screenshot:* `05-Define_Variable.png`
+![Determine Original Absolute Path](05-Define_Variable.png)
 
 ---
 
 ### 🔹 Task 6: Determine Destination Absolute Path
 Resolved and validated the absolute path of the destination directory.
 
-📸 *Screenshot:* `06-Define_Variable.png`
+![Determine Destination Absolute Path](06-Define_Variable.png)
 
 ---
 
 ### 🔹 Task 7: Change to Target Directory
 Navigated safely to the target directory containing files to be backed up.
 
-📸 *Screenshot:* `07-Change_Directory.png`
+![Change to Target Directory](07-Change_Directory.png)
 
 ---
 
 ### 🔹 Task 8: Calculate Yesterday’s Timestamp
 Calculated the timestamp corresponding to 24 hours prior to the current time.
 
-📸 *Screenshot:* `08-YesterdayTS.png`
+![Calculate Yesterday’s Timestamp](08-YesterdayTS.png)
 
 ---
 
 ### 🔹 Task 9: List Files and Directories
 Iterated over all files and directories using a wildcard loop.
 
-📸 *Screenshot:* `09-List_AllFilesandDirectories.png`
+![List Files and Directories](09-List_AllFilesandDirectories.png)
 
 ---
 
 ### 🔹 Task 10: Check File Modification Time
 Used an `if` condition to identify files modified within the last 24 hours.
 
-📸 *Screenshot:* `10-IF_Statement.png`
+![Check File Modification Time](10-IF_Statement.png)
 
 ---
 
 ### 🔹 Task 11: Add Files to Backup Array
 Appended recently modified files to an array for batch archiving.
 
-📸 *Screenshot:* `11-Add_File.png`
+![Add Files to Backup Array](11-Add_File.png)
 
 ---
 
 ### 🔹 Task 12: Create Compressed Backup
 Archived and compressed selected files into a `.tar.gz` backup file.
 
-📸 *Screenshot:* `12-Create_Backup.png`
+![Create Compressed Backup](12-Create_Backup.png)
 
 ---
 
 ### 🔹 Task 13: Move Backup File
 Moved the generated backup file to the destination directory.
 
-📸 *Screenshot:* `13-Move_Backup.png`
+![Move Backup File](13-Move_Backup.png)
 
 ---
 
 ### 🔹 Task 14: Save Script File
 Saved and downloaded the completed backup script.
 
-📸 *Screenshot:* `14-Save_File.png`
+![Save Script File](14-Save_File.png)
 
 ---
 
 ### 🔹 Task 15: Make Script Executable
 Changed file permissions and verified executability.
 
-📸 *Screenshot:* `15-executable.png`
+![Make Script Executable](15-executable.png)
 
 ---
 
 ### 🔹 Task 16: Test Backup Script
 Tested the script using a sample dataset to ensure successful backup creation.
 
-📸 *Screenshot:* `16-backup-complete.png`
+![Test Backup Script](16-backup-complete.png)
 
 ---
 
 ### 🔹 Task 17: Schedule Backup Using Cron
 Scheduled the backup script to run automatically every 24 hours using `crontab`.
 
-📸 *Screenshot:* `17-crontab.png`
+![Schedule Backup Using Cron](17-crontab.png)
 
 ---
 
